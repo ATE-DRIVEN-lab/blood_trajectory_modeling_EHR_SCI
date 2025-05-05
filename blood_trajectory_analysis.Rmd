@@ -100,7 +100,7 @@ library(patchwork)
 library(parallel)
 
 
-source("functions_ed2.R") #this file contains auxiliary custom functions
+source("functions.R") #this file contains auxiliary custom functions
 ```
 
 # The dataset build

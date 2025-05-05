@@ -1,0 +1,123 @@
+﻿analyte,k,link,poly,maxit
+Anion Gap,1,beta,3,2000
+Anion Gap,1,3-quant-splines,3,2000
+Anion Gap,2,beta,3,2000
+Anion Gap,2,3-quant-splines,3,2000
+Anion Gap,3,beta,3,2000
+Anion Gap,3,3-quant-splines,3,2000
+Bicarbonate,1,linear,3,2000
+Bicarbonate,2,linear,3,2000
+Bicarbonate,3,linear,3,2000
+Bicarbonate,4,linear,3,2000
+"Calcium, Total",1,linear,2,2000
+"Calcium, Total",2,linear,2,2000
+"Calcium, Total",3,linear,2,2000
+Chloride,1,3-quant-splines,3,2000
+Chloride,1,beta,3,2000
+Chloride,2,3-quant-splines,3,2000
+Chloride,2,beta,3,2000
+Chloride,3,3-quant-splines,3,2000
+Chloride,3,beta,3,2000
+Chloride,4,3-quant-splines,3,2000
+Chloride,4,beta,3,2000
+Creatinine,1,beta,1,5000
+Creatinine,2,beta,1,5000
+Creatinine,3,beta,1,5000
+Glucose,1,beta,1,2000
+Glucose,2,beta,1,2000
+Glucose,3,beta,1,2000
+Hematocrit,1,linear,3,2000
+Hematocrit,2,linear,3,2000
+Hematocrit,3,linear,3,2000
+Hematocrit,4,linear,3,2000
+Hemoglobin,1,linear,3,2000
+Hemoglobin,2,linear,3,2000
+Hemoglobin,3,linear,3,2000
+Hemoglobin,4,linear,3,2000
+Magnesium,1,3-quant-splines,3,2000
+Magnesium,2,3-quant-splines,3,2000
+Magnesium,3,3-quant-splines,3,2000
+Magnesium,4,3-quant-splines,3,2000
+Magnesium,1,beta,3,2000
+Magnesium,2,beta,3,2000
+Magnesium,3,beta,3,2000
+Magnesium,4,beta,3,2000
+MCH,1,linear,2,2000
+MCH,2,linear,2,2000
+MCH,3,linear,2,2000
+MCH,4,linear,2,2000
+MCH,5,linear,2,2000
+MCHC,1,linear,2,2000
+MCHC,1,linear,3,2000
+MCHC,2,linear,2,2000
+MCHC,2,linear,3,2000
+MCHC,3,linear,2,2000
+MCHC,3,linear,3,2000
+MCHC,4,linear,2,2000
+MCHC,4,linear,3,2000
+MCV,1,beta,2,2000
+MCV,2,beta,2,2000
+MCV,3,beta,2,2000
+MCV,4,beta,2,2000
+Phosphate,1,3-quant-splines,2,2000
+Phosphate,1,beta,2,2000
+Phosphate,1,3-quant-splines,3,2000
+Phosphate,1,beta,3,2000
+Phosphate,2,beta,2,2000
+Phosphate,2,beta,3,2000
+Phosphate,2,3-quant-splines,2,2000
+Phosphate,2,3-quant-splines,3,2000
+Phosphate,3,beta,2,2000
+Phosphate,3,beta,3,2000
+Phosphate,3,3-quant-splines,2,2000
+Phosphate,3,3-quant-splines,3,2000
+Platelet Count,1,beta,3,2000
+Platelet Count,1,3-quant-splines,3,2000
+Platelet Count,2,beta,3,2000
+Platelet Count,2,3-quant-splines,3,2000
+Platelet Count,3,beta,3,2000
+Platelet Count,3,3-quant-splines,3,2000
+Platelet Count,4,3-quant-splines,3,2000
+Platelet Count,4,beta,3,2000
+Potassium,1,beta,3,2000
+Potassium,1,3-quant-splines,3,2000
+Potassium,2,beta,3,2000
+Potassium,2,3-quant-splines,3,2000
+Potassium,3,beta,3,2000
+Potassium,3,3-quant-splines,3,2000
+RDW,1,beta,1,2000
+RDW,1,3-quant-splines,1,2000
+RDW,1,beta,2,2000
+RDW,1,3-quant-splines,2,2000
+RDW,2,beta,1,2000
+RDW,2,beta,2,2000
+RDW,2,3-quant-splines,1,2000
+RDW,2,3-quant-splines,2,2000
+RDW,3,beta,1,2000
+RDW,3,beta,2,2000
+RDW,3,3-quant-splines,1,2000
+RDW,3,3-quant-splines,2,2000
+RDW,4,beta,1,2000
+RDW,4,beta,2,2000
+RDW,4,3-quant-splines,1,2000
+RDW,4,3-quant-splines,2,2000
+Red Blood Cells,1,linear,3,2000
+Red Blood Cells,2,linear,3,2000
+Red Blood Cells,3,linear,3,2000
+Red Blood Cells,4,linear,3,2000
+Sodium,1,beta,2,2000
+Sodium,1,3-quant-splines,2,2000
+Sodium,2,beta,2,2000
+Sodium,2,3-quant-splines,2,2000
+Sodium,3,beta,2,2000
+Sodium,3,3-quant-splines,2,2000
+Sodium,4,beta,2,2000
+Sodium,4,3-quant-splines,2,2000
+Urea Nitrogen,1,beta,2,2000
+Urea Nitrogen,2,beta,2,2000
+Urea Nitrogen,3,beta,2,2000
+Urea Nitrogen,4,beta,2,2000
+White Blood Cells,1,beta,3,2000
+White Blood Cells,2,beta,3,2000
+White Blood Cells,3,beta,3,2000
+White Blood Cells,4,beta,3,2000

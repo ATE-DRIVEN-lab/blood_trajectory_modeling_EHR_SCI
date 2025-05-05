@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/977801343.svg)](https://doi.org/10.5281/zenodo.15339449)
 # Modeling of trajectories of routine blood values as dynamic biomarkers in spinal cord injury
 Repo that reproduce the modeling of routine blood trajectories in SCI from EHR data study performed by the Health.data DRIVEN lab at the School of Public Health Sciences, University of Waterloo. Code created by Drs. Marzieh Mussavi Rizi and Abel Torres Espin.
 

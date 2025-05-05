@@ -23,11 +23,17 @@ Note that data access need Data Use Agreement with PhysioNet. No data is provide
 The necessary TRACK-SCI data can be downloaded from the Open Data Commons for Spinal Cord Injury (SCI) [here](https://doi.org/10.34945/F5PK6X). If you use the data, please cite:
 >Mussavi Rizi, M., Saigal, R., DiGiorgio, A. M., Ferguson, A. R., Beattie, M. S., Kyritsis, N., Torres Espin, A.. 2025. Blood laboratory values from 137 de-identified TRACK-SCI participants from routine collected real-world data. Open Data Commons for Spinal Cord Injury. ODC-SCI:1345. doi: 10.34945/F5PK6X
 
+### SAPSII
+Part of this work uses SAPS II values for both MIMIC datasets. If you want to reproduce our work using this code, you will need to calculate it first, and save it in a `mimic_SC_saps.csv` file that contains four columns: subject_id = subject identifier;	hadm_id = hospital admision identifier;	icustay_id = ICU stay identifier;	sapsii = calculated SAPS II.
+
+For MIMIC-III, we compute SAPS II scores for the selected cohort using SQL code publicly available on GitHub. (https://github.com/MIT-LCP/mimic-code/blob/main/mimic-iii/concepts/severityscores/sapsii.sql). For MIMIC-IV, we used the equivalent script (https://github.com/MIT-LCP/mimic-code/blob/main/mimic-iv/concepts/score/sapsii.sql).
+ 
 ## Dependencies
 The code should run with the following environment. Further information can be found in the .Rmd file.
 
 "R version 4.4.1 (2024-06-14 ucrt)", "tidyverse 2.0.0", "data.table 1.17.0", "stringr 1.5.1", "DT 0.33", "gtsummary 2.2.0", "lcmm 1.9.4", "caret 7.0-1", "yardstick 1.3.2", "patchwork 1.3.0", "parallel (base with R 4.4.1)"
 
 ## Running the code
-Some sections of the .Rmd script are not evaluated during knitting (rendering) due to their computational overhead. We have provided intermediate files containing the necessary objects and biproducts of the code, including the final trajectory models to facilitate reproducibility. `To reproduce this work, you will need to run the code on the IDE by chunk`.
+Some sections of the .Rmd script are not evaluated during knitting (rendering) due to their computational overhead. We have provided intermediate files containing the necessary objects and biproducts of the code, including the final trajectory models to facilitate reproducibility. By cloning this repo, you should be able to reproduce our results without having to re-fit all the models, but you can do so too. `To reproduce this work, you will need to run the code on the IDE by chunk`. 
+
 >Running the full script from scratch will override some of the provided files and it can take hours to days to complete.

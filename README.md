@@ -1,6 +1,8 @@
 # Modeling of trajectories of routine blood values as dynamic biomarkers in spinal cord injury
 Repo that reproduce the modeling of routine blood trajectories in SCI from EHR data study performed by the Health.data DRIVEN lab at the School of Public Health Sciences, University of Waterloo. Code created by Drs. Marzieh Mussavi Rizi and Abel Torres Espin.
 
+For detail, please see our publications
+
 **Pre-Print**
 > Modeling trajectories of routine blood tests as dynamic biomarkers for outcome in spinal cord injury
 Marzieh Mussavi Rizi, Daniel Fernandez, John LK Kramer, Rajiv Saigal, Anthony M. DiGiorgio, Michael S. Beattie, Adam R Ferguson, Nikos Kyritsis, Abel Torres-Espin, TRACK-SCI investigators
@@ -8,6 +10,16 @@ medRxiv 2025.01.20.25320728; doi: https://doi.org/10.1101/2025.01.20.2532072
 
 **Peer-reviewed publication**
 >TBD
+
+# Repo structure
+
+* `blood_trajectory_analysis.Rmd`: contains all the main code to reproduce our modeling and analysis
+* `functions.R`: script with the main custom functions. It is loaded to environment by `blood_trajectory_analysis.Rmd`
+* `models_GMM`: set of GMM fited models using the lcmm package. These are .Rds files the with model objects
+* `models_GMM_selected`: set of final selected GMM fited models using the lcmm package. These are .Rds files the with model objects
+* `prediction_experiments`: set of .Rds files with R objects (lists and dataframes) containing all information on prediction experiments (see publications)
+* `figures`: output folder for figures
+* `tables`: output folder for tables
 
 # Notes on reproducing this work
 

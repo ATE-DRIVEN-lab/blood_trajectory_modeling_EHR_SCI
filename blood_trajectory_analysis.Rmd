@@ -24,7 +24,7 @@ Three datasets are used in this work: MIMIC-III version 1.4, MIMIC-IV version 1.
 
 >**Note 1**. We do not provide the datasets directly, and users of this code will need to download the data. The script contains the necessary code to prepare the data for analysis.
 
->**Note 2**. Some sections of the scripts are not evaluated during knitting (rendering) due to their computational overhead. We have provided intermediate files containing the necessary objects and biproducts of the code, including the final trajectory models to facilitate reproducibility. `To reproduce this work, you will need to run the code on the IDE by chunck`.
+>**Note 2**. Some sections of the scripts are not evaluated during knitting (rendering) due to their computational overhead. We have provided intermediate files containing the necessary objects and biproducts of the code, including the final trajectory models to facilitate reproducibility. `To reproduce this work, you will need to run the code on the IDE by chunk`.
 
 >**Note 3**. Running the full script from scratch will override some of the provided files and it can take hours to days to complete.
 
@@ -2117,7 +2117,7 @@ task_I_out_train_roc_plot <- exp_I_df %>%
   geom_boxplot(linewidth = 0.1)+
   geom_hline(yintercept = 0.5, color = "red", linetype = "dashed")+
   facet_grid(~cutoff)+
-  ylim(0.5,1)+
+  ylim(0,1)+
   ylab("ROC-AUC (out-train)")+
   theme_bw()+
   theme(axis.text.x = element_blank(), axis.title.x = element_blank(),
@@ -2135,7 +2135,7 @@ task_I_in_train_roc_plot <- exp_I_df %>%
   geom_boxplot(linewidth = 0.1)+
   geom_hline(yintercept = 0.5, color = "red", linetype = "dashed")+
   facet_grid(~cutoff)+
-  ylim(0.5,1)+
+  ylim(0,1)+
   ylab("ROC-AUC (in-train)")+
   theme_bw()+
   theme(axis.text.x = element_blank(), axis.title.x = element_blank(),
@@ -2534,7 +2534,7 @@ task_II_out_train_roc_plot <- exp_II_df %>%
   geom_boxplot(linewidth = 0.1)+
   geom_hline(yintercept = 0.5, color = "red", linetype = "dashed")+
   facet_grid(~ cutoff)+
-  ylim(0.5,1)+
+  ylim(0,1)+
   theme_bw()+
   ylab("ROC-AUC (out-train)")+
   theme(axis.text.x = element_blank(),
@@ -2553,7 +2553,7 @@ task_II_in_train_roc_plot <- exp_II_df %>%
   geom_boxplot(linewidth = 0.1)+
   geom_hline(yintercept = 0.5, color = "red", linetype = "dashed")+
   facet_grid(~cutoff)+
-  ylim(0.5,1)+
+  ylim(0,1)+
   ylab("ROC-AUC (in-train)")+
   theme_bw()+
   theme(axis.text.x = element_blank(),
@@ -2902,7 +2902,7 @@ task_III_out_train_roc_plot <- exp_III_df %>%
   geom_boxplot(linewidth = 0.1)+
   geom_hline(yintercept = 0.5, color = "red", linetype = "dashed")+
   facet_grid(~ cutoff)+
-  ylim(0.5,1)+
+  ylim(0,1)+
   theme_bw()+
   ylab("ROC-AUC (out-train)")+
   theme(axis.text.x = element_blank(),
@@ -2921,7 +2921,7 @@ task_III_in_train_roc_plot <- exp_III_df %>%
   geom_boxplot(linewidth = 0.1)+
   geom_hline(yintercept = 0.5, color = "red", linetype = "dashed")+
   facet_grid(~cutoff)+
-  ylim(0.5,1)+
+  ylim(0,1)+
   ylab("ROC-AUC (in-train)")+
   theme_bw()+
   theme(axis.text.x = element_blank(),
@@ -3421,7 +3421,7 @@ exp_I_saps_list_trj_df <- experiment_performance(exp_I_saps_list_trj,nrep)
 exp_I_saps_list_both <- readRDS(paste0("prediction_experiments/exp_I_saps_list_both.RDS"))
 
 # Drop any NULL entries (failed experiments)
-exp_I_saps_list_both <- exp_I_add_list[which(sapply(exp_I_saps_list_both, function(x) !is.null(x)))]
+exp_I_saps_list_both <- exp_I_saps_list_both[which(sapply(exp_I_saps_list_both, function(x) !is.null(x)))]
 exp_I_saps_list_both_df <- experiment_performance(exp_I_saps_list_both,nrep)
 
 # Load results of prediction experiments
@@ -3572,7 +3572,7 @@ task_I_saps_out_train_roc_plot <- exp_I_saps_df %>%
   geom_hline(yintercept = 0.5, color = "red", linetype = "dashed")+
    scale_fill_manual(values = .colors)+
   facet_grid(~cutoff)+
-  ylim(0.5,1)+
+  ylim(0,1)+
   ylab("ROC-AUC (out-train)")+
   theme_bw()+
   theme(axis.text.x = element_blank(), axis.title.x = element_blank(),
@@ -3591,7 +3591,7 @@ task_I_saps_in_train_roc_plot <- exp_I_saps_df%>%
   geom_hline(yintercept = 0.5, color = "red", linetype = "dashed")+
    scale_fill_manual(values = .colors)+
   facet_grid(~cutoff)+
-  ylim(0.5,1)+
+  ylim(0,1)+
   ylab("ROC-AUC (in-train)")+
   theme_bw()+
   theme(axis.text.x = element_blank(), axis.title.x = element_blank(),
@@ -3956,7 +3956,7 @@ exp_II_saps_list_trj_df <- experiment_performance(exp_II_saps_list_trj,nrep)
 exp_II_saps_list_both <- readRDS(paste0("prediction_experiments/exp_II_saps_list_both.RDS"))
 
 # Drop any NULL entries (failed experiments)
-exp_II_saps_list_both <- exp_II_add_list[which(sapply(exp_II_saps_list_both, function(x) !is.null(x)))]
+exp_II_saps_list_both <- exp_II_saps_list_both[which(sapply(exp_II_saps_list_both, function(x) !is.null(x)))]
 exp_II_saps_list_both_df <- experiment_performance(exp_II_saps_list_both,nrep)
 
 # Load results of prediction experiments
@@ -4102,7 +4102,7 @@ task_II_saps_out_train_roc_plot <- exp_II_saps_df %>%
   geom_hline(yintercept = 0.5, color = "red", linetype = "dashed")+
    scale_fill_manual(values = .colors)+
   facet_grid(~ cutoff)+
-  ylim(0.5,1)+
+  ylim(0,1)+
   theme_bw()+
   ylab("ROC-AUC (out-train)")+
   theme(axis.text.x = element_blank(),
@@ -4122,7 +4122,7 @@ task_II_saps_in_train_roc_plot <- exp_II_saps_df %>%
   geom_hline(yintercept = 0.5, color = "red", linetype = "dashed")+
    scale_fill_manual(values = .colors)+
   facet_grid(~cutoff)+
-  ylim(0.5,1)+
+  ylim(0,1)+
   ylab("ROC-AUC (in-train)")+
   theme_bw()+
   theme(axis.text.x = element_blank(),
@@ -4230,7 +4230,7 @@ roc_saps_out_train_fig<-
 
 roc_saps_out_train_fig
 
-ggsave(plot = roc_saps_out_train_fig, "figures/ROC_saps_out_train_fig.png", height = 8, width = 6)
+ggsave(plot = roc_saps_out_train_fig, "figures/ROC_saps_out_train_fig.png", height = 8, width = 8.2)
 
 roc_saps_in_train_fig<-
   task_I_saps_in_train_roc_plot+
@@ -4240,17 +4240,17 @@ roc_saps_in_train_fig<-
 
 roc_saps_in_train_fig
 
-ggsave(plot = roc_saps_in_train_fig, "figures/ROC_saps_in_train_fig.png", height = 8, width = 6)
+ggsave(plot = roc_saps_in_train_fig, "figures/ROC_saps_in_train_fig.png", height = 8, width = 8.2)
 
 pr_saps_out_train_fig<-
-  task_I_out_train_pr_plot+
-  task_II_out_train_pr_plot+
+  task_I_saps_out_train_pr_plot+
+  task_II_saps_out_train_pr_plot+
   plot_layout(ncol = 1)+
   plot_annotation(tag_levels = "a")
 
 pr_saps_out_train_fig
 
-ggsave(plot = pr_saps_out_train_fig, "figures/PR_saps_out_train_fig.png", height = 8, width = 6)
+ggsave(plot = pr_saps_out_train_fig, "figures/PR_saps_out_train_fig.png", height = 8, width = 8.2)
 
 pr_saps_in_train_fig<-
   task_I_saps_in_train_pr_plot+
@@ -4260,7 +4260,7 @@ pr_saps_in_train_fig<-
 
 pr_saps_in_train_fig
 
-ggsave(plot = pr_saps_in_train_fig, "figures/PR_saps_in_train_fig.png", height = 8, width = 6)
+ggsave(plot = pr_saps_in_train_fig, "figures/PR_saps_in_train_fig.png", height = 8, width = 8.2)
 ```
 
 

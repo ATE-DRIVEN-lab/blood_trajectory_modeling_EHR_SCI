@@ -1077,7 +1077,8 @@ track_sci_odc<-track_sci_odc%>%
                values_drop_na = T)%>%
   arrange(time_days)%>%
   mutate(StudyID = factor(StudyID),
-         subject_id_num = as.numeric(StudyID))%>%
+         subject_id_num = as.numeric(StudyID),
+         gender = ifelse(male == 1, "Male", "Female"))%>%
   group_by(lab_name, StudyID)%>%
   mutate(value_clean = extreme_deletion(value))
 

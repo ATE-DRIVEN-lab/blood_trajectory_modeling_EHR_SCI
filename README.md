@@ -4,13 +4,13 @@ Repo that reproduce the modeling of routine blood trajectories in SCI from EHR d
 
 For detail, please see our publications
 
+**Peer-reviewed publication**
+>Mussavi Rizi, M., Fernández, D., Kramer, J.L.K. et al. Modeling trajectories of routine blood tests as dynamic biomarkers for outcome in spinal cord injury. npj Digit. Med. 8, 470 (2025). https://doi.org/10.1038/s41746-025-01782-0
+
 **Pre-Print**
 > Modeling trajectories of routine blood tests as dynamic biomarkers for outcome in spinal cord injury
 Marzieh Mussavi Rizi, Daniel Fernandez, John LK Kramer, Rajiv Saigal, Anthony M. DiGiorgio, Michael S. Beattie, Adam R Ferguson, Nikos Kyritsis, Abel Torres-Espin, TRACK-SCI investigators
 medRxiv 2025.01.20.25320728; doi: https://doi.org/10.1101/2025.01.20.2532072
-
-**Peer-reviewed publication**
->TBD
 
 # Repo structure
 
